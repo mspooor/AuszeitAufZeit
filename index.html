@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NameTBD | Coaching & Motivation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #FFD700; /* Fröhliches Sonnengelb */
+            --accent-color: #FF6B6B;  /* Modernes Soft-Pink */
+            --dark-text: #2D3436;     /* Anthrazit für Lesbarkeit */
+            --light-bg: #F9F9F9;      /* Fast Weiß */
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--white);
+        }
+
+        header {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 10%;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #FFF5CC 100%);
+            text-align: center;
+            min-height: 80vh;
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 20px;
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        footer {
+            background: var(--dark-text);
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            header { flex-direction: column; }
+            nav { margin-top: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">NameTBD</div>
+        <nav>
+            <a href="#about">Über mich</a>
+            <a href="#offers">Angebot</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Deine Reise zu dir selbst beginnt hier.</h1>
+            <p>Ich bin NameTBD – deine Begleiterin für mehr Klarheit, Mut und Lebensfreude im Alltag.</p>
+            <a href="#contact" class="btn">Lass uns starten</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>Hi, ich bin NameTBD</h2>
+        <p style="max-width: 800px; margin: 0 auto;">
+            Mit Leidenschaft und Empathie unterstütze ich Menschen dabei, ihre inneren Blockaden zu lösen. 
+            Mein Ansatz ist modern, direkt und immer auf Augenhöhe.
+        </p>
+    </section>
+
+    <section id="offers" class="section" style="background-color: #fff;">
+        <h2>Wie ich dir helfe</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>1:1 Coaching</h3>
+                <p>Individuelle Begleitung für deine ganz persönlichen Themen und Ziele.</p>
+            </div>
+            <div class="card">
+                <h3>Workshops</h3>
+                <p>Interaktive Sessions in kleinen Gruppen für gemeinsames Wachstum.</p>
+            </div>
+            <div class="card">
+                <h3>Impulse</h3>
+                <p>Regelmäßige Motivation für deinen Posteingang oder Social Media.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 NameTBD. Alle Rechte vorbehalten.</p>
+        <p style="margin-top: 10px; font-size: 0.8rem;">Impressum | Datenschutz</p>
+    </footer>
+
+</body>
+</html>
